@@ -1,0 +1,81 @@
+@font-face {
+    font-family: Roboto-Mono;
+    src: url(Edu_AU_VIC_WA_NT_Arrows,Roboto_Mono/Roboto_Mono/static/RobotoMono-SemiBold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: 1em;
+    font-size: 1.15rem;
+    font-family: Roboto-Mono, poppins, sans-serif;
+}
+
+.input-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    height: 100vh;
+    flex: 1;
+}
+
+#output{
+    font-size: 1.105rem;
+}
+
+#btn{
+    font-family: Roboto-Mono, sans-serif;
+    font-size: 1.15rem;
+    padding: 1.5em 2.5em;
+    border-radius: 0.75em;
+    border: 0;
+    background-color: rgb(227, 226, 226);
+    box-shadow: 2px 2px 3px inset ;
+}
+
+#btn:hover{
+    background-color: black;
+    color: white;
+    border: 0;
+    box-shadow: none;
+}
+
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid white;
+    background-color: white;
+    padding: 2.0em 6em;
+    border-radius: 0.75em;
+    gap: 1.5em;
+}
+
+#resetBtn{
+    font-family: Roboto-Mono, sans-serif;
+    font-size: 1.15rem;
+    padding: 1.5em 2.5em;
+    border-radius: 0.75em;
+    border: 0;
+    background-color: rgb(227, 226, 226);
+    box-shadow: 2px 2px 3px inset;
+}
+
+#resetBtn:hover{
+    background-color: black;
+    color: white;
+    border: 0;
+    box-shadow: none;
+}
+
+
+
