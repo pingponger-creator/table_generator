@@ -9,7 +9,8 @@ const reset = document.getElementById("resetBtn")
 let initialValue = "";
 
 button.onclick = function getTable(){
-    const getNum = Math.floor(Math.random()*max + 1)
+    let txt = document.getElementById("txtNumber").value;
+    const getNum = txt;
     for(let i=1; i<=max; i++){
         initialValue +=`${getNum} x ${i} = ${getNum * i}<br>`
     }
@@ -20,4 +21,3 @@ reset.onclick = function(){
     initialValue = ""
     output.innerHTML = initialValue;
 }
-
