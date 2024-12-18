@@ -10,14 +10,24 @@ let initialValue = "";
 
 button.onclick = function getTable(){
     let txt = document.getElementById("txtNumber").value;
-    const getNum = txt;
+    const getNum = Number(txt);
+
     for(let i=1; i<=max; i++){
-        initialValue +=`${getNum} x ${i} = ${getNum * i}<br>`
+        if(getNum === 0)
+    {
+         output.innerHTML = "That's not a valid input"
     }
-    output.innerHTML = initialValue;    
+        else{
+            initialValue +=`${getNum} x ${i} = ${getNum * i}<br>`
+            output.innerHTML = initialValue;
+        }
+}
 }
 
 reset.onclick = function(){
     initialValue = ""
     output.innerHTML = initialValue;
 }
+
+
+
