@@ -1,4 +1,4 @@
-const max =Math.pow(10, 3);
+const max =Math.pow(10, 2);
 
 const output = document.getElementById("output");
 
