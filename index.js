@@ -16,6 +16,7 @@ button.onclick = function getTable(){
         if(getNum === 0)
     {
          output.innerHTML = "That's not a valid input"
+        
     }
         else{
             initialValue +=`${getNum} x ${i} = ${getNum * i}<br>`
@@ -23,6 +24,7 @@ button.onclick = function getTable(){
         }
 }
 }
+
 
 reset.onclick = function(){
     initialValue = ""
