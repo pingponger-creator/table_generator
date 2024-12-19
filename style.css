@@ -1,6 +1,6 @@
 @font-face {
     font-family: Roboto-Mono;
-    src: url(Edu_AU_VIC_WA_NT_Arrows,Roboto_Mono/Roboto_Mono/static/RobotoMono-SemiBold.ttf);
+    src:url(Edu_AU_VIC_WA_NT_Arrows,Roboto_Mono/Roboto_Mono/static/RobotoMono-Regular.ttf);
 }
 
 *{
@@ -11,20 +11,32 @@
 body{
     background-color: rgb(0, 0, 0);
     color: white;
-    margin: 1em;
-    font-size: 1.15rem;
     font-family: Roboto-Mono, sans-serif;
+    font-weight: 600;
+    font-variant: small-caps;
+
 }
 
 .input-container{
     display: flex;
     justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5em;
-    height: 100vh;
+    flex-direction: row;
+    gap: 0.5em;
     flex: 1;
     color: white;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.output-container{
+    display: flex;
+    justify-content: flex-start;
+    flex: 1;
+    margin-top: 1.5rem;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 
 #output{
@@ -34,54 +46,58 @@ body{
 #btn{
     font-family: Roboto-Mono, sans-serif;
     font-size: 1.15rem;
-    padding: 1.5em 2.5em;
-    border-radius: 0.75em;
     border: 0;
-    background-color: rgb(227, 226, 226);
-    box-shadow: 2px 2px 3px inset ;
-}
-
-#btn:hover{
-    background-color: black;
-    color: white;
-    border: 0;
-    box-shadow: none;
-}
-
-
-.button-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: 2px solid white;
-    background-color: white;
-    padding: 2.0em 6em;
-    border-radius: 0.75em;
-    gap: 1.5em;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    border-radius: 0.5rem;
+    font-weight: 400;
+    font-variant: small-caps;
 }
 
 #resetBtn{
     font-family: Roboto-Mono, sans-serif;
     font-size: 1.15rem;
-    padding: 1.5em 2.5em;
-    border-radius: 0.75em;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    border-radius: 0.5rem;
     border: 0;
-    background-color: rgb(227, 226, 226);
-    box-shadow: 2px 2px 3px inset;
+    font-weight: 400;
+    font-variant: small-caps;
+}
+
+#btn:hover{
+    background-color: rgb(45, 48, 193);
+    color: white;
+    box-shadow: none;
 }
 
 #resetBtn:hover{
-    background-color: black;
+    background-color: rgb(204, 45, 45);
     color: white;
-    border: 0;
     box-shadow: none;
 }
 
 #txtNumber{
-    padding: 0.25rem;
-    border-radius: 0.5em;
+    font-size: 1rem;
     border: 0;
-
+    border-radius: 0.5rem;
 }
 
+#number{
+    font-size: 1.25rem;
+    margin-top: 0.05em;
+}
+
+.title{
+    font-size: 1rem;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    display: flex;
+    justify-content: flex-start;
+}
