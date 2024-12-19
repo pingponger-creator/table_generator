@@ -15,7 +15,7 @@ button.onclick = function getTable(){
     let txt = document.getElementById("txtNumber").value;
     let getNum = Number(txt);
     // alert('kicked' + txt);
-    console.log(txt + '' + getNum);
+    console.log(txt + ' ' + getNum);
 
     for(let i=1; i<=max; i++){
 
