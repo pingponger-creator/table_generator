@@ -10,7 +10,7 @@ let initialValue = "";
 
 button.onclick = function getTable(){
     let txt = document.getElementById("txtNumber").value;
-    const getNum = Number(txt);
+    let getNum = Number(txt);
 
     for(let i=1; i<=max; i++){
 
