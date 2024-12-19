@@ -6,17 +6,14 @@ const button = document.getElementById("btn")
 
 const reset = document.getElementById("resetBtn")
 
-let initialValue = "";
-
-
 
 button.onclick = function getTable(){
     debugger;
     let txt = document.getElementById("txtNumber").value;
     let getNum = Number(txt);
-    // alert('kicked' + txt);
-    console.log(txt + ' ' + getNum);
 
+    
+    initialValue = ""; //reset the value of initial value to  empty string. 
     for(let i=1; i<=max; i++){
 
         if(getNum===0)
@@ -31,9 +28,9 @@ button.onclick = function getTable(){
         }
 }
 
+
 reset.onclick = function(){
     initialValue = ""
     output.innerHTML = initialValue;
     document.getElementById("txtNumber").value = 0;
-
 }
