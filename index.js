@@ -16,9 +16,9 @@ button.onclick = function getTable(){
     initialValue = ""; //reset the value of initial value to  empty string. 
     for(let i=1; i<=max; i++){
 
-        if(getNum===0)
+        if(getNum===0 || getNum ==="")
         {
-            output.innerHTML = "Error! Invalid input"
+            output.innerHTML = "Please enter a  number"
         }
         else
         {
@@ -26,11 +26,4 @@ button.onclick = function getTable(){
             output.innerHTML = initialValue;
         }
         }
-}
-
-
-reset.onclick = function(){
-    initialValue = ""
-    output.innerHTML = initialValue;
-    document.getElementById("txtNumber").value = 0;
 }
