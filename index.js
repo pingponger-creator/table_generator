@@ -9,9 +9,10 @@ const reset = document.getElementById("resetBtn")
 let initialValue = "";
 
 button.onclick = function getTable(){
-    alert('kicked')
+   
     let txt = document.getElementById("txtNumber").value;
     let getNum = Number(txt);
+    alert('kicked' + txt) 
 
     for(let i=1; i<=max; i++){
 
