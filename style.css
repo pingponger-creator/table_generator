@@ -46,7 +46,7 @@ body{
 #btn{
     font-family: Roboto-Mono, sans-serif;
     font-size: 1.15rem;
-    border: 0;
+    border: 1px, solid black;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
     padding-top: 0.25rem;

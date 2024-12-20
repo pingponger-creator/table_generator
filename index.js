@@ -8,7 +8,6 @@ const reset = document.getElementById("resetBtn")
 
 
 button.onclick = function getTable(){
-    debugger;
     let txt = document.getElementById("txtNumber").value;
     let getNum = Number(txt);
 
