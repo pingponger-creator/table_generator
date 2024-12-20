@@ -15,9 +15,13 @@ button.onclick = function getTable(){
     initialValue = ""; //reset the value of initial value to  empty string. 
     for(let i=1; i<=max; i++){
 
-        if(getNum===0 || getNum ==="")
+        if(getNum ==="")
         {
             output.innerHTML = "Please enter a  number"
+        }
+        else if(getNum===0)
+        {
+            output.innerHTML = "Please enter a  number > 0"
         }
         else
         {
